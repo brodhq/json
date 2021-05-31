@@ -1,10 +1,10 @@
-import {
-    // Castable,
-    // ErrorType,
-    // MaybeType,
-    GetValueType,
-    Typeable,
-} from '@geislabs/geis-type'
+// import {
+//     // Castable,
+//     // ErrorType,
+//     // MaybeType,
+//     GetValueType,
+//     Typeable,
+// } from '@geislabs/geis-type'
 // import { BooleanType, IntegerType, StringType } from '@geislabs/geis-core'
 
 export interface JsonPath extends Iterable<JsonPath> {
@@ -13,9 +13,9 @@ export interface JsonPath extends Iterable<JsonPath> {
     //     | ErrorType<IntegerType>
     //     | ErrorType<BooleanType>
     // >
-    toArray: <T extends Typeable>(
-        element: T
-    ) => GetValueType<T>[] | Error | null
+    // toArray: <T extends Typeable>(
+    //     element: T
+    // ) => GetValueType<T>[] | Error | null
     toObject: () => object | Error | null
     toString: () => string | null
     toInteger: () => number | Error | null
