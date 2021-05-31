@@ -1,2 +1,2 @@
 export { Json, JsonPath } from '@geislabs/json-type'
-export { createJson } from '@geislabs/json-fetch'
+export { createFetch } from '@geislabs/json-fetch'
