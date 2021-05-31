@@ -1,0 +1,33 @@
+{
+    "private": false,
+    "name": "@geislabs/json-type",
+    "version": "0.0.45",
+    "description": "> TODO: description",
+    "author": "mads hargreave <mads.hargreave@gmail.com>",
+    "homepage": "",
+    "repository": "git://github.com/geislabs/json.git",
+    "license": "ISC",
+    "main": "dist/index.js",
+    "directories": {
+        "dist": "dist",
+        "test": "test"
+    },
+    "files": [
+        "dist"
+    ],
+    "publishConfig": {
+        "registry": "http://registry.npmjs.org/",
+        "access": "public"
+    },
+    "scripts": {
+        "clean": "rimraf dist",
+        "build": "tsc",
+        "watch": "tsc --watch"
+    },
+    "dependencies": {
+        "jsonpath": "^1.1.1"
+    },
+    "devDependencies": {
+        "@geislabs/geis-type": "^0.0.45"
+    }
+}

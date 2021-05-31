@@ -41,4 +41,8 @@ export class JsonPathImpl implements JsonPath {
     [Symbol.iterator](): Iterator<JsonPath> {
         return buildIterator(this.config.provide, this.config.value)
     }
+
+    valueOf() {
+        return this.toObject() ?? {}
+    }
 }
