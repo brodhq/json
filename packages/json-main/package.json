@@ -25,12 +25,10 @@
         "watch": "tsc --watch"
     },
     "dependencies": {
-        "jsonpath": "^1.1.1"
-    },
-    "devDependencies": {
         "@geislabs/fetch": "^0.0.55",
         "@geislabs/json-fetch": "^0.0.53",
         "@geislabs/json-type": "^0.0.53",
-        "@geislabs/protocol": "^0.0.48"
+        "@geislabs/protocol": "^0.0.48",
+        "jsonpath": "^1.1.1"
     }
 }
