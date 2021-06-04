@@ -17,6 +17,6 @@
     },
     "scripts": {},
     "devDependencies": {
-        "@geislabs/json": "^0.0.57"
+        "@geislabs/json": "^0.0.59"
     }
 }
