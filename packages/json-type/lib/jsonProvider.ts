@@ -19,9 +19,10 @@ export function Json(
     const value =
         typeof content === 'string' ? (JSON.parse(content) as object) : content
 
-    const instance = provide([value])
+    const flattened = Array.isArray(value) ? value : [value]
+    const instance = provide(flattened)
     if (path) {
-        return instance.parse(path)
+        return instance.get(path)
     }
     return instance
 }

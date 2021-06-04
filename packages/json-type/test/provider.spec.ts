@@ -3,13 +3,13 @@ import { Json } from '../lib'
 describe('provider', () => {
     test('string', () => {
         const value = Json('{"value": 5}')
-        expect(value.toObject()).toStrictEqual({
+        expect(value.valueOf()).toStrictEqual({
             value: 5,
         })
     })
     test('object', () => {
         const value = Json({ value: 5 })
-        expect(value.toObject()).toStrictEqual({
+        expect(value.valueOf()).toStrictEqual({
             value: 5,
         })
     })

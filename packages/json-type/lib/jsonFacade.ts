@@ -26,15 +26,15 @@ export class JsonPathImpl implements JsonPath {
         return parseBoolean(value)
     }
 
-    toArray<T extends Typeable>(type: T): GetValueType<T>[] | Error | null {
-        return parseArray<T>(this.config.value, type, this)
+    toArray() {
+        return parseArray(this.config.value)
     }
 
     toObject() {
         return parseObject(this.config.value)
     }
 
-    parse(selector: string) {
+    get(selector: string) {
         return parse(this.config.provide, this.config.value, selector)
     }
 
