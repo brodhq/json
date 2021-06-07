@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@kransio/json">
+  <a href="https://www.npmjs.com/package/@krans/json">
     <img alt="Hex Version" src="https://img.shields.io/npm/v/@kransio/json.svg">
   </a>
   <a href="https://github.com/kransio/json/actions">
