@@ -13,7 +13,6 @@
 ### Functions
 
 - [Json](#json)
-- [createFetch](#createfetch)
 
 ## Functions
 
@@ -41,16 +40,6 @@ const value = Json(`{"value": 5}`).get('value').toInteger()
 #### Returns
 
 [JsonPath](#jsonpath)
-
-___
-
-### createFetch
-
-▸ `Const` **createFetch**(): `FetchAdapter`<``"json"``, [JsonPath](#jsonpath)\>
-
-#### Returns
-
-`FetchAdapter`<``"json"``, [JsonPath](#jsonpath)\>
 
 # Interfaces
 
