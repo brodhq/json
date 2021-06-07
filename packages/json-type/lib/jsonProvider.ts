@@ -2,6 +2,19 @@ import { JsonConfig, JsonPathProvideFn } from './jsonConfig'
 import { JsonPathImpl } from './jsonFacade'
 import { JsonPath } from './jsonTypes'
 
+/**
+ * Constructs a new json path from either a raw string
+ * or an object
+ *
+ * @param content
+ * @param path
+ * @param config
+ * @example
+ * ```typescript
+ * const value = Json(`{"value": 5}`).get('value').toInteger()
+ * // => 5
+ * ```
+ */
 export function Json(
     content: string | object = '',
     path?: string,

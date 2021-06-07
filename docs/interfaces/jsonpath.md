@@ -1,4 +1,4 @@
-[@geislabs/json](../README.md) / [Exports](../modules.md) / JsonPath
+[@geislabs/json](../README.md) / JsonPath
 
 # Interface: JsonPath
 
