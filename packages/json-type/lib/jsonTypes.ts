@@ -22,10 +22,6 @@ export interface JsonPath extends Iterable<JsonPath> {
     toString(): string | null
     /**
      * Return current json value as an integer
-     */
-    toInteger(): number | Error | null
-    /**
-     * Return current json value as a boolean
      *
      * @example
      * ```typescript
@@ -36,6 +32,10 @@ export interface JsonPath extends Iterable<JsonPath> {
      * const json = Json(`{"value": 5}`, 'unknown').toInteger()
      * // => null
      * ```
+     */
+    toInteger(): number | Error | null
+    /**
+     * Return current json value as a boolean
      */
     toBoolean(): boolean | Error | null
     /**
