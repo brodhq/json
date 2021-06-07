@@ -8,6 +8,7 @@
         "build": "lerna run build --stream",
         "start": "lerna run start --stream",
         "release:patch": "git add -A && git commit -am \"released\" --allow-empty && lerna version patch --yes --force-publish",
+        "docs": "rimraf docs && typedoc --readme README.md --disableSources --out docs packages/json-main/lib/index.ts",
         "test:coverage": "jest --collect-coverage",
         "test": "jest",
         "test:unit": "jest --testPathIgnorePatterns packages/json-e2e",
@@ -44,7 +45,9 @@
         "ts-jest": "^27.0.2",
         "ts-loader": "^9.2.2",
         "ts-node": "^10.0.0",
-        "typescript": "4.3.2",
+        "typedoc": "^0.20.36",
+        "typedoc-plugin-markdown": "^3.9.0",
+        "typescript": "4.2.4",
         "zod": "^3.1.0"
     }
 }
