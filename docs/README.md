@@ -1,18 +1,8 @@
 # README
 
-@geislabs/json
-
-# @geislabs/json
-
-## Table of contents
-
-### Interfaces
+## Interfaces
 
 - [JsonPath](#jsonpath)
-
-### Functions
-
-- [Json](#json)
 
 ## Functions
 
@@ -45,10 +35,6 @@ const value = Json(`{"value": 5}`).get('value').toInteger()
 
 ## Jsonpath
 
-[@geislabs/json](#readme) / JsonPath
-
-# Interface: JsonPath
-
 A JsonPath represents a nested selection of
 properties inside a JSON document
 
@@ -57,18 +43,6 @@ properties inside a JSON document
 - `Iterable`<[JsonPath](#jsonpath)\>
 
   ↳ **JsonPath**
-
-## Table of contents
-
-### Methods
-
-- [[Symbol.iterator]](jsonpath.md#[symbol.iterator])
-- [get](#get)
-- [toArray](#toarray)
-- [toBoolean](#toboolean)
-- [toInteger](#tointeger)
-- [toString](#tostring)
-- [valueOf](#valueof)
 
 ## Methods
 
