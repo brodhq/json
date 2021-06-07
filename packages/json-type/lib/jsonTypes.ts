@@ -18,6 +18,11 @@ export interface JsonPath extends Iterable<JsonPath> {
     get(selector: string): JsonPath
     /**
      * Return string value
+     * @example
+     * ```typescript
+     * const json = Json('{"value": 5}').get('value').toString()
+     * // => '5'
+     * ```
      */
     toString(): string | null
     /**
@@ -36,6 +41,11 @@ export interface JsonPath extends Iterable<JsonPath> {
     toInteger(): number | Error | null
     /**
      * Return current json value as a boolean
+     * @example
+     * ```typescript
+     * const json = Json('{"value": true}').get('value').toBoolean()
+     * // => true
+     * ```
      */
     toBoolean(): boolean | Error | null
     /**
@@ -51,6 +61,11 @@ export interface JsonPath extends Iterable<JsonPath> {
     toArray(): JsonValue[]
     /**
      * Unwraps the inner json value
+     * @example
+     * ```typescript
+     * const json = Json('{"value": 5}').valueOf()
+     * // => {value: 5}
+     * ```
      */
     valueOf(): object | object[]
 }
