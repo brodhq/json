@@ -26,6 +26,16 @@ export interface JsonPath extends Iterable<JsonPath> {
     toInteger(): number | Error | null
     /**
      * Return current json value as a boolean
+     *
+     * @example
+     * ```typescript
+     * const json = Json(`{"value": 5}`, 'value').toInteger()
+     * // => 5
+     * const json = Json(`{"value": 'not a number'}`, 'value').toInteger()
+     * // => Error
+     * const json = Json(`{"value": 5}`, 'unknown').toInteger()
+     * // => null
+     * ```
      */
     toBoolean(): boolean | Error | null
     /**
