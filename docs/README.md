@@ -146,16 +146,6 @@ ___
 
 Return current json value as a boolean
 
-**`example`**
-```typescript
-const json = Json(`{"value": 5}`, 'value').toInteger()
-// => 5
-const json = Json(`{"value": 'not a number'}`, 'value').toInteger()
-// => Error
-const json = Json(`{"value": 5}`, 'unknown').toInteger()
-// => null
-```
-
 #### Returns
 
 ``null`` \| `boolean` \| `Error`
@@ -167,6 +157,16 @@ ___
 ▸ **toInteger**(): ``null`` \| `number` \| `Error`
 
 Return current json value as an integer
+
+**`example`**
+```typescript
+const json = Json(`{"value": 5}`, 'value').toInteger()
+// => 5
+const json = Json(`{"value": 'not a number'}`, 'value').toInteger()
+// => Error
+const json = Json(`{"value": 5}`, 'unknown').toInteger()
+// => null
+```
 
 #### Returns
 
