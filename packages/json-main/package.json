@@ -1,7 +1,7 @@
 {
     "private": false,
     "name": "@geislabs/json",
-    "version": "0.0.71",
+    "version": "0.0.72",
     "description": "> TODO: description",
     "author": "mads hargreave <mads.hargreave@gmail.com>",
     "homepage": "",
@@ -26,8 +26,8 @@
     },
     "dependencies": {
         "@geislabs/fetch": "^0.0.60",
-        "@geislabs/json-fetch": "^0.0.71",
-        "@geislabs/json-type": "^0.0.71",
+        "@geislabs/json-fetch": "^0.0.72",
+        "@geislabs/json-type": "^0.0.72",
         "@geislabs/protocol": "^0.0.48",
         "jsonpath": "^1.1.1"
     }
